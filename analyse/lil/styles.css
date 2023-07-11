@@ -1,0 +1,42 @@
+.text-effect {
+	position: relative;
+}
+
+.text-effect .overlay {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: scaleOverlay 1s forwards cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+@keyframes scaleOverlay {
+	50% {
+		transform: scaleX(1);
+	}
+	75% {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+	76% {
+		transform-origin: right;
+	}
+	100% {
+		transform: scaleX(0);
+		transform-origin: right;
+	}
+}
+
+.text-effect p {
+	opacity: 0;
+	animation: revealText 0.1s 0.4s forwards;
+}
+
+@keyframes revealText {
+	to {
+		opacity: 1;
+	}
+}

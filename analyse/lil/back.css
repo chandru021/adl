@@ -1,0 +1,87 @@
+.loadingWrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+
+.loading1 {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+
+
+.loading2 {
+  background-color: #000 ;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: transparent 4s forwards;
+}
+
+@keyframes transparent {
+  0% {
+    opacity:1;
+  }
+  30%{
+    opacity:1;
+  }
+  80%{
+    opacity:0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+
+.loading2:before {
+  content: "";
+  background-color: #279d91;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.loading2.is-active:before {
+  animation-name: page1;
+  animation-duration:1.6s;
+  animation-timing-function:cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode:forwards;
+}
+
+
+
+
+/* keyframes */
+@keyframes page1{
+  20% {
+    width: 0%;
+    right: 0;
+  }
+  50% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0%;
+    right: 100%;
+  /*}*/
+  }   
+}
+
+
