@@ -1,0 +1,83 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+}
+
+.gcontainer {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 100%;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4caf50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+.greview {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.greview::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	border: 10px solid transparent;
+	border-bottom-color: #ccc;
+	transform: translateX(-50%);
+}
+
+.greview h3 {
+	margin-top: 0;
+}
+
+.greview p {
+	margin-bottom: 0;
+}
+
+.greview span {
+	color: #999;
+	font-size: 0.8em;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}

@@ -1,0 +1,30 @@
+.rightContent1 {
+	position: absolute;
+	top: 0;
+	right: 30vh;
+	height: 90px;
+	color: aliceblue;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 36px;
+	letter-spacing: 3px;
+	z-index: 3;
+}
+
+.rightContent2 {
+	position: absolute;
+	top: 0;
+
+	right: 10vh;
+	height: 90px;
+	color: aliceblue;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 36px;
+	letter-spacing: 3px;
+	z-index: 3;
+}
